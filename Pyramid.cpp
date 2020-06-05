@@ -20,7 +20,7 @@ int main()
 		         iMultiLines = ++iLines * 2,
 		         iAlloc = (iMultiLines * (iLines - 1) / 4 * 3) - iLines + 2;		// Last character '\0'.
 
-		// Сreating a buffer to build a string in it. Everytime calling the system to exit is very slow.
+		// Сreating a buffer to build a string in it. Everytime calling the system to output is very slow.
 		char *psOutput = new char[iAlloc];
 
 		cout << "Memory alloc: " << iAlloc << " bytes" << endl;
